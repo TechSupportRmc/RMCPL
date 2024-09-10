@@ -59,7 +59,7 @@ const Hero = () => {
   const staticButtons = [
     {
       buttonText: 'Read More',
-      buttonLink: '/speciality-chemicals',
+      buttonLink: '/specialalitychem',
     },
     {
       buttonText: 'Read More',
