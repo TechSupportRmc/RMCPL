@@ -1,0 +1,200 @@
+#hero {
+    width: 100%;
+    height: 92vh;
+    background-color: rgba(255, 255, 255, 0.8);
+  
+    overflow: hidden;
+    position: relative;
+  }
+  
+  #hero .carousel,
+  #hero .carousel-inner,
+  #hero .carousel-item,
+  #hero .carousel-item,
+  #hero .carousel-item::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+  
+  #hero .carousel-item {
+    background-size: cover;
+    background-position: top center;
+    
+   
+  }
+  #hero .carousel-container{
+  }     
+  /*#hero .carousel-container{
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 20px;
+    top: 220px;
+    left: 5px;
+    right: 50px;
+  }
+  */
+  #hero .carousel-container{
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 20px;
+    top: 180px;
+    left: 5px;
+    right: 50px;
+  }
+
+  #hero .carousel-item .container p{
+    font-size: 20px;
+  }
+  
+  @media (max-width:500px){
+    #hero .container p{
+      font-size: 10px;
+    }
+  }
+  #hero .container h2  {
+    /*color: #fbfbfc;
+    margin: 0;
+    font-size:300%;
+    font-weight: 700;
+    margin: auto;
+    */
+
+    color: #fff;
+    margin-top: -6rem;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+@media (max-width: 768px){
+ #hero .container h2 {
+    font-size: 30px;
+}
+}
+#hero .container p{
+  color: white;
+
+}
+  #hero .carousel-inner .carousel-item {
+    transition-property: opacity;
+    background-position: center top;
+  }
+  
+  #hero .carousel-inner .carousel-item,
+  #hero .carousel-inner .active.carousel-item-start,
+  #hero .carousel-inner .active.carousel-item-end {
+    opacity: 0;
+  }
+  
+  #hero .carousel-inner .active,
+  #hero .carousel-inner .carousel-item-next.carousel-item-start,
+  #hero .carousel-inner .carousel-item-prev.carousel-item-end {
+    opacity: 1;
+    transition: 0.5s;
+  }
+  
+  #hero .carousel-inner .carousel-item-next,
+  #hero .carousel-inner .carousel-item-prev,
+  #hero .carousel-inner .active.carousel-item-start,
+  #hero .carousel-inner .active.carousel-item-end {
+    left: 0;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  #hero .carousel-control-next-icon,
+  #hero .carousel-control-prev-icon {
+    background: none;
+    font-size: 30px;
+    line-height: 0;
+    width: auto;
+    height: auto;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+    transition: 0.3s;
+    color: rgba(255, 255, 255, 0.5);
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #hero .carousel-control-next-icon:hover,
+  #hero .carousel-control-prev-icon:hover {
+    background: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  #hero .carousel-indicators li {
+    list-style-type: none;
+    cursor: pointer;
+    background: #fff;
+    overflow: hidden;
+    border: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    opacity: 0.6;
+    transition: 0.3s;
+  }
+  
+  #hero .carousel-indicators li.active {
+    opacity: 1;
+    background:  #087eca;
+  }
+  
+  #hero .btn-get-started {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 14px 32px;
+    border-radius: 4px;
+    transition: 0.5s;
+    line-height: 1;
+    color:  #087eca;
+    animation-delay: 0.8s;
+    background: #fff;
+    margin-top: 15px;
+  }
+  
+  #hero .btn-get-started:hover {
+    background:  #087eca;
+    color: white;
+  }
+  
+  @media (max-width: 992px) {
+    #hero {
+      height: 100vh;
+    }
+  
+    #hero .carousel-container {
+      text-align: center;
+      top: 74px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #hero h2 {
+      font-size: 30px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+  
+    #hero .carousel-control-prev,
+    #hero .carousel-control-next {
+      width: 5%;
+    }
+  }
+  
+  @media (max-height: 500px) {
+    #hero {
+      height: 120vh;
+    }
+  }
