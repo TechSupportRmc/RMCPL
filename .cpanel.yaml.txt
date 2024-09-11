@@ -1,0 +1,10 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/username/public_html/your_project_directory
+    - /bin/bash -c 'source /opt/cpanel/ea-nodejs16/bin/enable'
+    - cd $DEPLOYPATH
+    - git pull origin main
+    - npm install --production
+    - npm run build
+    - /bin/cp -R build/* $DEPLOYPATH
