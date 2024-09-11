@@ -54,7 +54,7 @@ const Footer = () => {
             <div className="col-lg-2 col-md-6 footer-links">
               <h4>Quick Links</h4>
               <ul>
-                <li><i className="bx bx-chevron-right"></i> <a href="/services">Service</a></li>
+                <li><i className="bx bx-chevron-right"></i> <a href="/services">Service Account</a></li>
                 <li><i className="bx bx-chevron-right"></i> <a href="/legalnotice">Legal Notice</a></li>
                 <li><i className="bx bx-chevron-right"></i> <a href="/Privacy-policy">Privacy Policy</a></li>
                 <li><i className="bx bx-chevron-right"></i> <a href="/Disclaimer">Disclaimer</a></li>
